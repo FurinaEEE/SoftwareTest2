@@ -1,0 +1,19 @@
+@startuml
+class runner.MainRunnerGUI {
+- JFrame frame
+- JComboBox<String> demoSelector
+- JButton runButton
+- JButton showDiagramsButton
+- JTextArea inputTextArea
+- String inputFilePath
+- String outputFilePath
+- void initialize()
+- void saveInputToFile()
+- void runDemo(int)
+- void displayOutput()
+- void showDiagrams(int)
++ {static} void main(String[])
+}
+
+
+@enduml
